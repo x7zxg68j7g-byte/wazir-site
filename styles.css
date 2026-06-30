@@ -143,8 +143,15 @@ p {
 .container {
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 1.5rem; /* Default padding */
   position: relative;
+}
+
+/* Add this to force extra breathing room on mobile */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1.25rem; /* Adjust if it still feels too tight */
+  }
 }
 
 .text-gradient {
