@@ -1,0 +1,1219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wazir | Strategy & Consulting Club, IIM Rohtak</title>
+  <meta name="description" content="Official Strategy and Consulting Club of IIM Rohtak. Empowering future consultants through knowledge sessions, casebooks, and pro-bono consulting clinics. In chaos find your purpose.">
+  <link rel="stylesheet" href="styles.css?v=2.0">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       HEADER & NAVIGATION
+       ========================================================================== -->
+  <header class="header" id="header">
+    <div class="container">
+      <a href="#home" class="logo">
+        <svg class="logo-icon" viewBox="0 0 100 100">
+          <!-- Wazir Official Circular Logo Emblem -->
+          <circle cx="50" cy="50" r="44" stroke="currentColor" stroke-width="2.5" fill="none" opacity="0.3"/>
+          <circle cx="50" cy="50" r="40" stroke="currentColor" stroke-width="1.5" fill="none"/>
+          <!-- Globe Grid Lines -->
+          <path d="M10 50 H90 M50 10 V90" stroke="currentColor" stroke-width="1" opacity="0.5"/>
+          <path d="M16 30 C 30 40, 70 40, 84 30 M16 70 C 30 60, 70 60, 84 70" stroke="currentColor" stroke-width="1" fill="none" opacity="0.4"/>
+          <path d="M30 16 C 40 30, 40 70, 30 84 M70 16 C 60 30, 60 70, 70 84" stroke="currentColor" stroke-width="1" fill="none" opacity="0.4"/>
+          <!-- Central Stylized Rook / Crown Chess Piece -->
+          <!-- Crown Top -->
+          <path d="M38 35 L43 45 L50 38 L57 45 L62 35 L62 52 L38 52 Z" fill="#ffffff" stroke="currentColor" stroke-width="1.5"/>
+          <!-- Neck / Shaft -->
+          <path d="M43 52 L45 74 L55 74 L57 52 Z" fill="#ffffff" stroke="currentColor" stroke-width="1.5"/>
+          <!-- Base Pedestal -->
+          <path d="M35 74 H65 V80 H35 Z" fill="#ffffff" stroke="currentColor" stroke-width="1.5"/>
+          <rect x="38" y="80" width="24" height="3" fill="currentColor"/>
+        </svg>
+        WAZIR<span>IIMR</span>
+      </a>
+      <nav class="nav" id="nav-menu">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#verticals" class="nav-link">Verticals</a>
+        <a href="#apex" class="nav-link">Clinic</a>
+        <a href="#hub" class="nav-link">Interactive Hub</a>
+        <a href="#events" class="nav-link">Events</a>
+        <a href="#team" class="nav-link">Team</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="#hub" class="btn btn-primary" style="padding: 0.5rem 1.2rem; font-size: 0.85rem;">Solve Case</a>
+      </nav>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================================================
+         HERO SECTION
+         ========================================================================== -->
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-content">
+            <div class="hero-club-badge">Official Strategy & Consulting Club of IIM Rohtak</div>
+            <h1 class="hero-title text-gradient">WAZIR</h1>
+            
+            <div class="hero-tagline">
+              <span class="motto-script">In chaos find your purpose</span>
+            </div>
+            
+            <div class="hero-quote-box">
+              <blockquote>“The ones who dare to think what others dare not”</blockquote>
+            </div>
+
+            <p class="hero-description" style="margin-bottom: 2.5rem; max-width: 580px;">
+              Wazir [Vuh. Zeer] represents the strategist of the highest order. We scale up consulting culture at IIM Rohtak, bridging domain methodologies with live corporate projects.
+            </p>
+            <div class="hero-actions">
+              <a href="#hub" class="btn btn-primary">Try Case Simulator</a>
+              <a href="#contact" class="btn btn-secondary">Partner With Us</a>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="emblem-container">
+              <div class="emblem-blur-bg"></div>
+              <div class="emblem-ring emblem-ring-1"></div>
+              <div class="emblem-ring emblem-ring-2"></div>
+              <!-- Glowing Vector Version of the Official Wazir Emblem -->
+              <svg class="emblem-svg" viewBox="0 0 100 100">
+                <defs>
+                  <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#00E5FF" />
+                    <stop offset="100%" stop-color="#0056b3" />
+                  </linearGradient>
+                  <filter id="neon">
+                    <feGaussianBlur stdDeviation="3" result="blur"/>
+                    <feMerge>
+                      <feMergeNode in="blur"/>
+                      <feMergeNode in="SourceGraphic"/>
+                    </feMerge>
+                  </filter>
+                </defs>
+                <!-- Outer Rings -->
+                <circle cx="50" cy="50" r="45" stroke="url(#blueGrad)" stroke-width="2" fill="none" opacity="0.8" filter="url(#neon)"/>
+                <circle cx="50" cy="50" r="41" stroke="#ffffff" stroke-width="0.75" fill="none" opacity="0.6"/>
+                <!-- Globe Grids -->
+                <line x1="9" y1="50" x2="91" y2="50" stroke="url(#blueGrad)" stroke-width="0.75" opacity="0.6"/>
+                <line x1="50" y1="9" x2="50" y2="91" stroke="url(#blueGrad)" stroke-width="0.75" opacity="0.6"/>
+                <path d="M15 32 C 30 43, 70 43, 85 32 M15 68 C 30 57, 70 57, 85 68" stroke="url(#blueGrad)" stroke-width="0.75" fill="none" opacity="0.5"/>
+                <path d="M32 15 C 43 30, 43 70, 32 85 M68 15 C 57 30, 57 70, 68 85" stroke="url(#blueGrad)" stroke-width="0.75" fill="none" opacity="0.5"/>
+                
+                <!-- Main Chess Piece Rook-Crown shape -->
+                <!-- Crown -->
+                <path d="M36 34 L42 45 L50 37 L58 45 L64 34 L64 52 L36 52 Z" fill="#030a16" stroke="#ffffff" stroke-width="1.5" filter="url(#neon)"/>
+                <!-- Lines in Crown -->
+                <line x1="43" y1="52" x2="43" y2="46" stroke="#00E5FF" stroke-width="1"/>
+                <line x1="57" y1="52" x2="57" y2="46" stroke="#00E5FF" stroke-width="1"/>
+                <!-- Shaft -->
+                <path d="M42 52 L44 74 L56 74 L58 52 Z" fill="#030a16" stroke="#ffffff" stroke-width="1.5"/>
+                <path d="M48 55 V70 M52 55 V70" stroke="url(#blueGrad)" stroke-width="1"/>
+                <!-- Pedestal -->
+                <path d="M33 74 H67 V80 H33 Z" fill="#030a16" stroke="#ffffff" stroke-width="1.5"/>
+                <rect x="36" y="80" width="28" height="3" fill="#00E5FF" rx="1.5"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#about" class="scroll-indicator">
+        <span></span>
+        scroll down
+      </a>
+    </section>
+
+    <!-- Topological wave graphical divider -->
+    <svg class="topowave-divider" viewBox="0 0 1440 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 35C150 15 300 55 450 35C600 15 750 55 900 35C1050 15 1200 55 1350 35C1400 30 1420 32 1440 35V70H0V35Z" fill="var(--bg-secondary)"/>
+      <path d="M0 45C150 25 300 65 450 45C600 25 750 65 900 45C1050 25 1200 65 1350 45C1400 40 1420 42 1440 45" stroke="var(--brand-accent)" stroke-width="1" opacity="0.3"/>
+    </svg>
+
+    <!-- ==========================================================================
+         ABOUT US SECTION (VISION, MISSION & EXPERTISE)
+         ========================================================================== -->
+    <section class="about" id="about" style="background-color: var(--bg-secondary);">
+      <div class="container">
+        <h2 class="section-title text-gradient">Who Are We?</h2>
+        <p class="section-subtitle">Fostering strategic excellence and building consulting readiness.</p>
+        
+        <div class="about-grid">
+          <div class="about-content">
+            <h3 style="font-size: 1.8rem; margin-bottom: 1rem;">The Strategy & Consulting Club of IIM Rohtak</h3>
+            <p>
+              We are a student-run organization with the goal of giving students a forum to learn more about the consulting industry. We work in partnership with faculty and corporates to scale up consulting culture on campus, bringing interesting live projects and publications, giving students an edge to think strategically in their domains.
+            </p>
+            <p style="font-weight: 500; color: var(--brand-accent); font-style: italic; margin-top: 1rem;">
+              "The 'W' in Wazir does not stand for work, but stands for 'WE', because we are not a club, we are a family."
+            </p>
+            
+            <div class="vision-mission-grid">
+              <!-- Vision Panel -->
+              <div class="vm-panel">
+                <div class="vm-icon-box">V</div>
+                <div class="vm-info">
+                  <h4>Vision</h4>
+                  <p>Foster a culture of knowledge and engagement that reaches across IIM Rohtak and inspires minds beyond.</p>
+                </div>
+              </div>
+              <!-- Mission Panel -->
+              <div class="vm-panel">
+                <div class="vm-icon-box">M</div>
+                <div class="vm-info">
+                  <h4>Mission</h4>
+                  <p>To empower students with the knowledge, skills, and network necessary to excel in the consulting industry.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="about-visual">
+            <div class="matrix-card glass-card">
+              <h3 style="margin-bottom: 1rem; font-size: 1.5rem;" class="text-gradient">The Wazir Way</h3>
+              <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1.5rem;">Building slides or building strategy?</p>
+              
+              <div class="matrix-rows">
+                <div class="matrix-row">
+                  <div class="matrix-row-title">
+                    <h4>Strategic Expertise</h4>
+                    <p>Corporate vision & path-finding</p>
+                  </div>
+                  <div class="matrix-row-badge">Top Mgmt</div>
+                </div>
+                
+                <div class="matrix-row">
+                  <div class="matrix-row-title">
+                    <h4>Functional Expertise</h4>
+                    <p>Process scaling & unit economics</p>
+                  </div>
+                  <div class="matrix-row-badge">Middle Mgmt</div>
+                </div>
+                
+                <div class="matrix-row">
+                  <div class="matrix-row-title">
+                    <h4>Operational Expertise</h4>
+                    <p>On-the-ground project execution</p>
+                  </div>
+                  <div class="matrix-row-badge">Lower Mgmt</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Topological wave graphical divider -->
+    <svg class="topowave-divider" viewBox="0 0 1440 70" fill="none" xmlns="http://www.w3.org/2000/svg" style="transform: rotate(180deg);">
+      <path d="M0 35C150 15 300 55 450 35C600 15 750 55 900 35C1050 15 1200 55 1350 35C1400 30 1420 32 1440 35V70H0V35Z" fill="var(--bg-secondary)"/>
+      <path d="M0 45C150 25 300 65 450 45C600 25 750 65 900 45C1050 25 1200 65 1350 45C1400 40 1420 42 1440 45" stroke="var(--brand-accent)" stroke-width="1" opacity="0.3"/>
+    </svg>
+
+    <!-- ==========================================================================
+         THE HOUSE OF WAZIR (VERTICALS ARCHITECTURE)
+         ========================================================================== -->
+    <section class="verticals-temple" id="verticals">
+      <div class="container">
+        <h2 class="section-title text-gradient">The House of Wazir</h2>
+        <p class="section-subtitle">Perfectly balanced, as all things should be.</p>
+        
+        <p style="text-align: center; max-width: 700px; margin: -2rem auto 2.5rem; font-size: 1rem; font-weight: 300;">
+          The six verticals are the pillars of commitment and strength that hold the colosseum - Wazir together. The Knowledge Vertical serves as the foundation, while the Public Relations Vertical — the "Mother of Verticals" — illuminates their presence.
+        </p>
+
+        <!-- Colosseum Architectural Temple Grid -->
+        <div class="temple-container">
+          <!-- Roof Pediment -->
+          <div class="temple-roof">
+            <div class="temple-roof-content">
+              <svg viewBox="0 0 24 24"><path d="M12 3L1 9H4V21H20V9H23L12 3M12 7.7C13.8 7.7 15.3 9.2 15.3 11C15.3 12.8 13.8 14.3 12 14.3C10.2 14.3 8.7 12.8 8.7 11C8.7 9.2 10.2 7.7 12 7.7M18 19H6V11C6 10.7 6.1 10.4 6.3 10.2L12 5.5L17.7 10.2C17.9 10.4 18 10.7 18 11V19Z"/></svg>
+              House of Wazir
+            </div>
+          </div>
+          <!-- Beam Architrave -->
+          <div class="temple-architrave">~ Strategy & Consulting ~</div>
+          
+          <!-- Pillars Column Grid -->
+          <div class="temple-columns-grid">
+            <!-- Pillar 1: Casebook -->
+            <div class="temple-pillar" onclick="inspectVertical('casebook')">
+              <div class="pillar-cap"></div>
+              <div class="pillar-shaft">
+                <div class="pillar-shaft-title">Casebook</div>
+              </div>
+              <div class="pillar-base"></div>
+            </div>
+            
+            <!-- Pillar 2: Consulting Clinic -->
+            <div class="temple-pillar" onclick="inspectVertical('clinic')">
+              <div class="pillar-cap"></div>
+              <div class="pillar-shaft">
+                <div class="pillar-shaft-title">Consulting Clinic</div>
+              </div>
+              <div class="pillar-base"></div>
+            </div>
+            
+            <!-- Pillar 3: Editorial -->
+            <div class="temple-pillar" onclick="inspectVertical('editorial')">
+              <div class="pillar-cap"></div>
+              <div class="pillar-shaft">
+                <div class="pillar-shaft-title">Editorial</div>
+              </div>
+              <div class="pillar-base"></div>
+            </div>
+            
+            <!-- Pillar 4: Events -->
+            <div class="temple-pillar" onclick="inspectVertical('events')">
+              <div class="pillar-cap"></div>
+              <div class="pillar-shaft">
+                <div class="pillar-shaft-title">Events</div>
+              </div>
+              <div class="pillar-base"></div>
+            </div>
+            
+            <!-- Pillar 5: External Relations -->
+            <div class="temple-pillar" onclick="inspectVertical('relations')">
+              <div class="pillar-cap"></div>
+              <div class="pillar-shaft">
+                <div class="pillar-shaft-title">External Relations</div>
+              </div>
+              <div class="pillar-base"></div>
+            </div>
+            
+            <!-- Pillar 6: Public Relations -->
+            <div class="temple-pillar" onclick="inspectVertical('pr')">
+              <div class="pillar-cap"></div>
+              <div class="pillar-shaft">
+                <div class="pillar-shaft-title">Public Relations</div>
+              </div>
+              <div class="pillar-base"></div>
+            </div>
+          </div>
+          
+          <!-- Stylobate Base Steps -->
+          <div class="temple-stylobate">~ Knowledge Foundation ~</div>
+        </div>
+
+        <!-- Dynamic Inspector Panel -->
+        <div class="vertical-detail-container" id="vertical-detail-panel">
+          <div class="glass-card vertical-detail-card" style="text-align: center; padding: 3rem;">
+            <svg style="width: 50px; height: 50px; fill: var(--brand-accent); opacity: 0.7; margin-bottom: 1.5rem;" viewBox="0 0 24 24">
+              <path d="M12 2A10 10 0 1 0 22 12A10 10 0 0 0 12 2ZM13 17H11V11H13V17ZM13 9H11V7H13V9Z"/>
+            </svg>
+            <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Interactive Operations Inspector</h3>
+            <p style="color: var(--text-muted); max-width: 500px; margin: 0 auto;">Click or tap on any of the temple pillars above to examine the detailed vertical operations, publications, and impact metrics.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Topological wave graphical divider -->
+    <svg class="topowave-divider" viewBox="0 0 1440 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 35C150 15 300 55 450 35C600 15 750 55 900 35C1050 15 1200 55 1350 35C1400 30 1420 32 1440 35V70H0V35Z" fill="var(--bg-secondary)"/>
+      <path d="M0 45C150 25 300 65 450 45C600 25 750 65 900 45C1050 25 1200 65 1350 45C1400 40 1420 42 1440 45" stroke="var(--brand-accent)" stroke-width="1" opacity="0.3"/>
+    </svg>
+
+    <!-- ==========================================================================
+         APEX - THE CONSULTING CLINIC
+         ========================================================================== -->
+    <section class="apex-clinic-showcase" id="apex" style="background-color: var(--bg-secondary);">
+      <div class="container">
+        <div class="apex-headline-row">
+          <div>
+            <div class="hero-club-badge" style="background: rgba(0, 229, 255, 0.05);">Pro Bono Practice</div>
+            <h2 style="font-size: 2.75rem; font-weight: 700; margin-bottom: 1rem;" class="text-gradient">APEX - The Consulting Clinic</h2>
+            <p style="font-size: 1.1rem; line-height: 1.6; margin-bottom: 1.5rem;">
+              “You don’t learn strategy from slides — you learn it by solving problems.” At Wazir, we believe strategy is best learned through doing — grounded in real challenges, not just theory.
+            </p>
+            <p style="font-size: 0.95rem;">
+              APEX gives student consultants the opportunity to take on live projects from small and medium-sized businesses and government bodies, creating an impact.
+            </p>
+          </div>
+          
+          <div class="glass-card timeline-card">
+            <h3 style="font-size: 1.3rem; margin-bottom: 1.5rem;" class="text-gradient">The APEX Journey</h3>
+            
+            <div class="apex-timeline">
+              <div class="timeline-step">
+                <div class="timeline-year">2022 - 2023</div>
+                <div class="timeline-title">Crafting the Vision</div>
+                <div class="timeline-desc">Establishing methodologies and internal frameworks.</div>
+              </div>
+              <div class="timeline-step">
+                <div class="timeline-year">2023 - 2024</div>
+                <div class="timeline-title">Onboarding Local Clients</div>
+                <div class="timeline-desc">Serving SMEs in Haryana and neighboring areas.</div>
+              </div>
+              <div class="timeline-step">
+                <div class="timeline-year">2024 - 2025</div>
+                <div class="timeline-title">Expanding Footprint</div>
+                <div class="timeline-desc">Assisting clients and organizations nationwide.</div>
+              </div>
+              <div class="timeline-step active">
+                <div class="timeline-year">2025 - 2026</div>
+                <div class="timeline-title">Targeting Higher-Level Clients</div>
+                <div class="timeline-desc">Consulting for govt. bodies & funded scaleups.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h3 style="font-size: 1.8rem; margin-bottom: 2.5rem; text-align: center;" class="text-gradient">Client Case Studies & Testimonials</h3>
+        
+        <!-- Corporate Clients Grid -->
+        <div class="cases-grid">
+          <!-- Case 1: AYUSHEXCIL -->
+          <div class="case-study-card glass-card">
+            <div class="case-study-meta">
+              <span class="case-study-tag">Govt / Pharma</span>
+              <span class="case-study-industry">New Delhi</span>
+            </div>
+            <h3>AYUSHEXCIL, Ministry of AYUSH</h3>
+            <p class="case-study-problem">
+              <strong>Business Problem:</strong> Strategic structuring and creation of the AYUSHEXCIL annual report to capture export promotion metrics.
+            </p>
+            <p class="case-study-quote">
+              "Collaborating with Wazir was an exceptional experience. The team's dedication, thorough research, and sharp strategic thinking added meaningful value."
+            </p>
+          </div>
+          
+          <!-- Case 2: Nema Club+ -->
+          <div class="case-study-card glass-card">
+            <div class="case-study-meta">
+              <span class="case-study-tag">Medical Services</span>
+              <span class="case-study-industry">Gurgaon</span>
+            </div>
+            <h3>Nema Club+</h3>
+            <p class="case-study-problem">
+              <strong>Business Problem:</strong> Formulation of a comprehensive Go-to-Market (GTM) strategy for their premium healthcare app launch.
+            </p>
+            <p class="case-study-quote">
+              "Working with Wazir was highly positive. Their well-researched report and suggestions played a key role in refining our strategy."
+            </p>
+          </div>
+          
+          <!-- Case 3: The Weekend Door -->
+          <div class="case-study-card glass-card">
+            <div class="case-study-meta">
+              <span class="case-study-tag">Travel & Rental</span>
+              <span class="case-study-industry">Hyderabad</span>
+            </div>
+            <h3>The Weekend Door</h3>
+            <p class="case-study-problem">
+              <strong>Business Problem:</strong> Formulating expansion roadmaps and digital marketing funnels to capture the premium villa rental space.
+            </p>
+            <p class="case-study-quote">
+              "Their strategic inputs helped us refine our business model and solve key scaling hurdles. Proactive and highly aligned."
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Topological wave graphical divider -->
+    <svg class="topowave-divider" viewBox="0 0 1440 70" fill="none" xmlns="http://www.w3.org/2000/svg" style="transform: rotate(180deg);">
+      <path d="M0 35C150 15 300 55 450 35C600 15 750 55 900 35C1050 15 1200 55 1350 35C1400 30 1420 32 1440 35V70H0V35Z" fill="var(--bg-secondary)"/>
+      <path d="M0 45C150 25 300 65 450 45C600 25 750 65 900 45C1050 25 1200 65 1350 45C1400 40 1420 42 1440 45" stroke="var(--brand-accent)" stroke-width="1" opacity="0.3"/>
+    </svg>
+
+    <!-- ==========================================================================
+         INTERACTIVE HUB (CASEBOOK, FRAMEWORKS, SIMULATOR)
+         ========================================================================== -->
+    <section class="hub" id="hub">
+      <div class="container">
+        <h2 class="section-title text-gradient">Interactive Consulting Hub</h2>
+        <p class="section-subtitle">Develop your structured thinking with our interactive resources.</p>
+        
+        <div class="hub-tabs">
+          <button class="hub-tab-btn active" onclick="switchHubTab(event, 'tab-casebook')">Casebook 3.0</button>
+          <button class="hub-tab-btn" onclick="switchHubTab(event, 'tab-frameworks')">Frameworks Hub</button>
+          <button class="hub-tab-btn" onclick="switchHubTab(event, 'tab-simulator')">Solve a Case</button>
+        </div>
+        
+        <!-- Tab 1: Casebook Showcase -->
+        <div class="hub-content-pane active" id="tab-casebook">
+          <div class="casebook-layout">
+            <div class="casebook-mockup">
+              <div class="book-container">
+                <div class="book-cover">
+                  <div class="book-tagline">IIM Rohtak</div>
+                  <div>
+                    <div class="book-title">WAZIR</div>
+                    <div class="book-subtitle">Casebook 3.0</div>
+                  </div>
+                  <div class="book-logo">
+                    <svg style="width:18px; height:18px; fill:var(--brand-accent);" viewBox="0 0 100 100">
+                      <circle cx="50" cy="50" r="44" stroke="currentColor" stroke-width="3" fill="none"/>
+                      <path d="M38 35 L43 45 L50 38 L57 45 L62 35 L62 52 L38 52 Z" fill="#ffffff" stroke="currentColor" stroke-width="1"/>
+                      <path d="M43 52 L45 74 L55 74 L57 52 Z" fill="#ffffff" stroke="currentColor" stroke-width="1"/>
+                      <path d="M35 74 H65 V80 H35 Z" fill="#ffffff" stroke="currentColor" stroke-width="1"/>
+                    </svg>
+                    <div class="book-logo-text">Wazir</div>
+                  </div>
+                </div>
+                <div class="book-pages"></div>
+              </div>
+            </div>
+            
+            <div class="casebook-info">
+              <div class="hero-club-badge" style="background: rgba(0, 229, 255, 0.05); margin-bottom: 1rem;">#THIRDTIME'STHECHARM</div>
+              <h3 class="text-gradient">Born from real battles and bold minds</h3>
+              <p>
+                The Wazir Casebook is our legacy resource shared with faculty and top business schools. Curated and reviewed by IIM Rohtak alumni in consulting roles (McKinsey, BCG, Bain, Big 4), it prepares candidates not just to answer—but to outthink.
+              </p>
+              
+              <div class="casebook-stats">
+                <div class="c-stat">
+                  <h4>50+</h4>
+                  <p>Resolved Cases</p>
+                </div>
+                <div class="c-stat">
+                  <h4>30+</h4>
+                  <p>Guesstimates</p>
+                </div>
+                <div class="c-stat">
+                  <h4>40+</h4>
+                  <p>Frameworks</p>
+                </div>
+              </div>
+              
+              <button class="btn btn-primary" onclick="simulateDownload()">
+                <svg style="width:18px; height:18px; fill:currentColor;" viewBox="0 0 24 24"><path d="M5,20H19V18H5M19,9H15V3H9V9H5L12,16L19,9Z"/></svg>
+                Download Soft Copy (PDF)
+              </button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Tab 2: Frameworks Hub -->
+        <div class="hub-content-pane" id="tab-frameworks">
+          <div class="publications-section">
+            
+            <!-- Category A: Regular Publications -->
+            <div>
+              <div class="publications-category-title">Core Knowledge Series</div>
+              <div class="publications-grid">
+                <!-- Pub 1: Guesstimate Guruwaar -->
+                <div class="pub-card glass-card">
+                  <div class="pub-card-header">
+                    <span class="pub-label">Weekly Editorial</span>
+                    <span class="pub-count">60+ Editions</span>
+                  </div>
+                  <h3>Guesstimate Guruwaar</h3>
+                  <p>Weekly strategic guesstimate challenges designed to foster a calculation and structuring culture. Includes the "Guesstimate Guru" awards.</p>
+                  <a href="#" class="pub-card-action">Read articles ➔</a>
+                </div>
+                
+                <!-- Pub 2: Monthly Muse -->
+                <div class="pub-card glass-card">
+                  <div class="pub-card-header">
+                    <span class="pub-label">Monthly Magazine</span>
+                    <span class="pub-count">25+ MMs</span>
+                  </div>
+                  <h3>The Monthly Muse</h3>
+                  <p>In-depth case transcripts, consulting interviews, and structured breakdowns of actual interviews held at premier firms.</p>
+                  <a href="#" class="pub-card-action">Read publications ➔</a>
+                </div>
+                
+                <!-- Pub 3: Industry Overview -->
+                <div class="pub-card glass-card">
+                  <div class="pub-card-header">
+                    <span class="pub-label font-title">Fortnightly Editorial</span>
+                    <span class="pub-count">20+ IOs</span>
+                  </div>
+                  <h3>Industry Overview</h3>
+                  <p>Comprehensive market reports covering growth trends, regulatory drivers, and economics across core sectors.</p>
+                  <a href="#" class="pub-card-action">Read reports ➔</a>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Category B: Limited Editions -->
+            <div>
+              <div class="publications-category-title">Limited Edition Insights</div>
+              <div class="publications-grid">
+                <!-- Pub 4: Strat Square -->
+                <div class="pub-card glass-card">
+                  <div class="pub-card-header">
+                    <span class="pub-label" style="background: rgba(0, 229, 255, 0.05);">Weekly Fast-read</span>
+                    <span class="pub-count">15+ SSs</span>
+                  </div>
+                  <h3>Strat Square</h3>
+                  <p>Deconstructing corporate strategy models using the "Strategy Diamond" framework in a lightning-fast, 2-minute reading format.</p>
+                  <a href="#" class="pub-card-action">Explore insights ➔</a>
+                </div>
+                
+                <!-- Pub 5: Strategy Insights -->
+                <div class="pub-card glass-card">
+                  <div class="pub-card-header">
+                    <span class="pub-label" style="background: rgba(0, 229, 255, 0.05);">Bi-Monthly</span>
+                    <span class="pub-count">10+ SIs</span>
+                  </div>
+                  <h3>Strategy Insights</h3>
+                  <p>Anatomical review of business decisions that helped enterprises carve strategic niches and outsmart competitors.</p>
+                  <a href="#" class="pub-card-action">Explore insights ➔</a>
+                </div>
+                
+                <!-- Pub 6: Strategy Mutations -->
+                <div class="pub-card glass-card">
+                  <div class="pub-card-header">
+                    <span class="pub-label" style="background: rgba(0, 229, 255, 0.05);">Monthly M&A</span>
+                    <span class="pub-count">10+ SMs</span>
+                  </div>
+                  <h3>Strategy Mutations</h3>
+                  <p>Analyzing mergers and acquisitions (M&A) activities, deal rationales, synergy dynamics, and post-merger integration paths.</p>
+                  <a href="#" class="pub-card-action">Explore insights ➔</a>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        
+        <!-- Tab 3: Interactive Guesstimate Simulator -->
+        <div class="hub-content-pane" id="tab-simulator">
+          <div class="simulator-layout">
+            <div class="simulator-box" id="simulator-box">
+              
+              <!-- Progress Steps -->
+              <div class="simulator-steps">
+                <div class="sim-step-indicator active" id="sim-step-1-indicator">
+                  <div class="step-num">1</div>
+                  <div class="step-lbl">Clarify</div>
+                </div>
+                <div class="sim-step-indicator" id="sim-step-2-indicator">
+                  <div class="step-num">2</div>
+                  <div class="step-lbl">Structure</div>
+                </div>
+                <div class="sim-step-indicator" id="sim-step-3-indicator">
+                  <div class="step-num">3</div>
+                  <div class="step-lbl">Calculate</div>
+                </div>
+                <div class="sim-step-indicator" id="sim-step-4-indicator">
+                  <div class="step-num">4</div>
+                  <div class="step-lbl">Review</div>
+                </div>
+              </div>
+              
+              <!-- Challenge Prompt -->
+              <div class="simulator-prompt-box">
+                <h4>Guesstimate Challenge</h4>
+                <p>"Estimate the annual market size of Electric Vehicle (EV) charging stations in Mumbai."</p>
+              </div>
+              
+              <!-- Step 1 Pane: Clarification -->
+              <div class="sim-step-content active" id="sim-step-1">
+                <h3 class="sim-question-title text-gradient">Step 1: Clarifying the Scope</h3>
+                <p style="margin-bottom: 1.5rem; font-size: 0.95rem;">Before jumping into numbers, you must align scope with the interviewer. Which question is critical to scope this guesstimate properly?</p>
+                
+                <div class="sim-choices-grid">
+                  <button class="sim-choice-btn" onclick="selectChoice(this, 1, 'incorrect', 'While interesting, commercial charging station infrastructure is driven by business/public deployment, not specifically charging standards details.')">
+                    <div class="choice-marker">A</div>
+                    <span>Should we consider AC slow chargers vs DC fast chargers?</span>
+                  </button>
+                  <button class="sim-choice-btn" onclick="selectChoice(this, 1, 'correct', 'Excellent! Knowing whether we target private residential chargers, public commercial hubs, or fleet depots is critical for structuring the demand model.')">
+                    <div class="choice-marker">B</div>
+                    <span>Are we estimating public commercial charging stations, or does this include private home chargers?</span>
+                  </button>
+                  <button class="sim-choice-btn" onclick="selectChoice(this, 1, 'incorrect', 'The model of EV cars (Tesla vs local brands) doesn\'t change the core infrastructure math for counting charging stations.')">
+                    <div class="choice-marker">C</div>
+                    <span>Should we limit the estimate to specific brands of EV cars operating in Mumbai?</span>
+                  </button>
+                </div>
+                <div class="sim-feedback-box" id="sim-feedback-1"></div>
+              </div>
+              
+              <!-- Step 2 Pane: Structuring -->
+              <div class="sim-step-content" id="sim-step-2">
+                <h3 class="sim-question-title text-gradient">Step 2: Choosing Your Approach</h3>
+                <p style="margin-bottom: 1.5rem; font-size: 0.95rem;">Now choose the optimal formula tree to model the total number of public charging stations in Mumbai.</p>
+                
+                <div class="sim-choices-grid">
+                  <button class="sim-choice-btn" onclick="selectChoice(this, 2, 'incorrect', 'This does not account for the frequency of usage or utilization factors of individual charging stations, which dictates how many are needed.')">
+                    <div class="choice-marker">A</div>
+                    <span>Total Mumbai Vehicles × EV Penetration Rate × Average cost of electricity.</span>
+                  </button>
+                  <button class="sim-choice-btn" onclick="selectChoice(this, 2, 'correct', 'Correct! Structuring via supply capacity and vehicle charging demand is the standard MECE approach for fleet capacity planning.')">
+                    <div class="choice-marker">B</div>
+                    <span>(Total EVs in Mumbai × Avg Charges needed/week) ÷ (Avg Capacity of a Station charges/week).</span>
+                  </button>
+                  <button class="sim-choice-btn" onclick="selectChoice(this, 2, 'incorrect', 'This focuses strictly on land footprint rather than transport/vehicle demand, which is harder to estimate accurately.')">
+                    <div class="choice-marker">C</div>
+                    <span>Total Mumbai Area ÷ Average grid layout capacity per square kilometer.</span>
+                  </button>
+                </div>
+                <div class="sim-feedback-box" id="sim-feedback-2"></div>
+              </div>
+              
+              <!-- Step 3 Pane: Calculations -->
+              <div class="sim-step-content" id="sim-step-3">
+                <h3 class="sim-question-title text-gradient">Step 3: Quantifying the Drivers</h3>
+                <p style="margin-bottom: 1.5rem; font-size: 0.95rem;">Fill in the structured assumptions below. We've pre-filled some standard base assumptions. Complete the calculation.</p>
+                
+                <div class="sim-calculator-container">
+                  <div class="calc-workspace">
+                    <div class="calc-title">Assumptions & Variables</div>
+                    <div class="calc-inputs-grid">
+                      <div class="calc-input-group">
+                        <label>1. Estimated Total EV Vehicles in Mumbai</label>
+                        <input type="number" id="calc-evs" class="calc-input-field" value="60000" readonly>
+                      </div>
+                      <div class="calc-input-group">
+                        <label>2. Average Charges required per EV per week</label>
+                        <input type="number" id="calc-freq" class="calc-input-field" value="2">
+                      </div>
+                      <div class="calc-input-group">
+                        <label>3. Max weekly charge capacity per Station</label>
+                        <input type="number" id="calc-capacity" class="calc-input-field" value="80">
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="calc-workspace">
+                    <div class="calc-title">Formula Output</div>
+                    <div class="calc-formula-display">
+                      Stations = (EVs × Freq) / Capacity
+                    </div>
+                    <div class="calc-inputs-grid">
+                      <div class="calc-input-group">
+                        <label>Enter your calculated Stations</label>
+                        <input type="number" id="calc-result" class="calc-input-field" placeholder="Calculate & Enter">
+                      </div>
+                      <p style="font-size: 0.8rem;" id="calc-hint-msg">Hint: Multiply EV count by charge frequency, then divide by weekly station capacity.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="sim-feedback-box" id="sim-feedback-3"></div>
+              </div>
+              
+              <!-- Step 4 Pane: Summary / Review -->
+              <div class="sim-step-content" id="sim-step-4">
+                <div class="sim-success-content">
+                  <div class="success-badge-icon">✓</div>
+                  <h3>Guesstimate Cracked!</h3>
+                  <p>You have demonstrated structured consulting logic. Here is your evaluation report:</p>
+                  
+                  <div class="sim-score-summary">
+                    <div class="sim-score-num" id="sim-final-score">100%</div>
+                    <div class="sim-score-lbl">Logical Alignment Score</div>
+                  </div>
+                  
+                  <p style="font-size: 0.95rem; max-width: 550px; margin: 0 auto 2.5rem;">
+                    <strong>Executive Summary:</strong> Mumbai's public charging network requires roughly <strong>1,500 active stations</strong> to support a private EV fleet of 60,000, assuming a utilization rate of ~50% (approx 80 charges per week per station base capacity).
+                  </p>
+                </div>
+              </div>
+              
+              <!-- Actions -->
+              <div class="simulator-actions">
+                <button class="btn btn-secondary" id="sim-btn-back" disabled onclick="prevSimStep()">Back</button>
+                <button class="btn btn-primary" id="sim-btn-next" onclick="nextSimStep()">Next Step</button>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         FLAGSHIP EVENTS SECTION
+         ========================================================================== -->
+    <section class="events" id="events">
+      <div class="container">
+        <h2 class="section-title text-gradient">Flagship Events & Calendar</h2>
+        <p class="section-subtitle">National challenges driving engagement across top IITs & IIMs.</p>
+        
+        <div class="events-layout-grid">
+          <!-- Event 1: COTY -->
+          <div class="event-card">
+            <div class="event-media">
+              <span class="event-media-placeholder">COTY 2025</span>
+              <div class="event-tag">Flagship Competition</div>
+              <svg class="event-badge-icon" viewBox="0 0 100 100" fill="none" stroke-width="1.5">
+                <circle cx="50" cy="50" r="30" stroke-dasharray="4,4"/>
+                <circle cx="50" cy="50" r="20"/>
+                <circle cx="50" cy="50" r="10"/>
+                <path d="M50 20 V80 M20 50 H80"/>
+              </svg>
+            </div>
+            <div class="event-info">
+              <h3>Consultant Of The Year</h3>
+              <div class="event-meta">
+                <span>🏆 8 Editions Conducted</span>
+                <span>🎓 1st Year PGP</span>
+              </div>
+              <p class="event-description">
+                Our hallmark intra-college challenge evaluating case resolving acumen, stress management, and presentation abilities.
+              </p>
+            </div>
+          </div>
+          
+          <!-- Event 2: Legacy Events -->
+          <div class="event-card">
+            <div class="event-media">
+              <span class="event-media-placeholder">LEGACY EVENTS</span>
+              <div class="event-tag">Series</div>
+              <svg class="event-badge-icon" viewBox="0 0 100 100" fill="none" stroke-width="1.5">
+                <rect x="35" y="35" width="30" height="30" rx="4"/>
+                <circle cx="20" cy="20" r="5"/>
+                <circle cx="80" cy="20" r="5"/>
+                <circle cx="50" cy="80" r="5"/>
+                <path d="M25 25 L35 35 M75 25 L65 35 M50 75 L50 65"/>
+              </svg>
+            </div>
+            <div class="event-info">
+              <h3>Legacy Series</h3>
+              <div class="event-meta">
+                <span>🎙️ Director's Roundtable</span>
+                <span>💡 Impostors Gambit</span>
+              </div>
+              <p class="event-description">
+                Annual panels and games (e.g. Consulting Carousel) challenging student coordinates on structured economics logic.
+              </p>
+            </div>
+          </div>
+          
+          <!-- Event 3: Passion Events -->
+          <div class="event-card">
+            <div class="event-media">
+              <span class="event-media-placeholder">PASSION EVENTS</span>
+              <div class="event-tag">Open Tracks</div>
+              <svg class="event-badge-icon" viewBox="0 0 100 100" fill="none" stroke-width="1.5">
+                <path d="M20 70 L30 40 L50 55 L70 40 L80 70 H20 Z" fill="none"/>
+                <line x1="15" y1="75" x2="85" y2="75" stroke-width="2"/>
+              </svg>
+            </div>
+            <div class="event-info">
+              <h3>Passion Tracks</h3>
+              <div class="event-meta">
+                <span>⏳ Cinematic Seconds</span>
+                <span>💻 Product Playground</span>
+              </div>
+              <p class="event-description">
+                Fast-paced competitions testing market analysis (e.g., Stratlyst, Prodthink Quest) in partnership with *The Product Folks*.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="event-partners-scroller">
+          <h4>Collaborating Institutes & Partners</h4>
+          <div class="partners-logos-flex">
+            <div class="partner-logo-item">IIM Lucknow</div>
+            <div class="partner-logo-item">IIM Kozhikode</div>
+            <div class="partner-logo-item">IIM Raipur</div>
+            <div class="partner-logo-item">The Product Folks</div>
+            <div class="partner-logo-item">Skilled Sapiens</div>
+            <div class="partner-logo-item">Miduty</div>
+            <div class="partner-logo-item">Investics</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Topological wave graphical divider -->
+    <svg class="topowave-divider" viewBox="0 0 1440 70" fill="none" xmlns="http://www.w3.org/2000/svg" style="transform: rotate(180deg);">
+      <path d="M0 35C150 15 300 55 450 35C600 15 750 55 900 35C1050 15 1200 55 1350 35C1400 30 1420 32 1440 35V70H0V35Z" fill="var(--bg-secondary)"/>
+      <path d="M0 45C150 25 300 65 450 45C600 25 750 65 900 45C1050 25 1200 65 1350 45C1400 40 1420 42 1440 45" stroke="var(--brand-accent)" stroke-width="1" opacity="0.3"/>
+    </svg>
+
+    <!-- ==========================================================================
+         PUBLIC RELATIONS - THE MOTHER OF VERTICALS
+         ========================================================================== -->
+    <section class="pr-showcase" id="pr" style="background-color: var(--bg-secondary);">
+      <div class="container">
+        <div class="pr-hero-row">
+          <div class="pr-hero-content">
+            <div class="hero-club-badge" style="background: rgba(0, 229, 255, 0.05);">The Mother of Verticals</div>
+            <h2 style="font-size: 2.75rem; font-weight: 700; margin-bottom: 1rem;" class="text-gradient">Public Relations</h2>
+            <p style="font-size: 1.1rem; line-height: 1.7; margin-bottom: 1.5rem;">
+              If the world doesn't see you, you don't exist. The PR vertical is the connective tissue that amplifies every initiative across Wazir — from LinkedIn thought-leadership to Instagram storytelling, we craft narratives that position Wazir as a national consulting brand.
+            </p>
+            <p style="font-size: 0.95rem; color: var(--text-secondary); margin-bottom: 2rem;">
+              Every casebook launch, every COTY edition, every APEX case study — our PR engine ensures it reaches the right audience at the right time through the right channel.
+            </p>
+          </div>
+
+          <div class="pr-stats-grid">
+            <div class="pr-stat-card glass-card">
+              <div class="pr-stat-number text-gradient">1M+</div>
+              <div class="pr-stat-label">Cumulative Impressions</div>
+              <div class="pr-stat-desc">Across LinkedIn, Instagram &amp; campus media</div>
+            </div>
+            <div class="pr-stat-card glass-card">
+              <div class="pr-stat-number text-gradient">200+</div>
+              <div class="pr-stat-label">Content Pieces Published</div>
+              <div class="pr-stat-desc">Posts, reels, carousels &amp; long-form articles</div>
+            </div>
+            <div class="pr-stat-card glass-card">
+              <div class="pr-stat-number text-gradient">15+</div>
+              <div class="pr-stat-label">Brand Campaigns</div>
+              <div class="pr-stat-desc">Event launches, casebook reveals &amp; alumni spotlights</div>
+            </div>
+            <div class="pr-stat-card glass-card">
+              <div class="pr-stat-number text-gradient">6</div>
+              <div class="pr-stat-label">Verticals Amplified</div>
+              <div class="pr-stat-desc">End-to-end narrative support for every vertical</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PR Activities Showcase -->
+        <h3 style="font-size: 1.8rem; margin: 4rem 0 2.5rem; text-align: center;" class="text-gradient">How PR Powers Wazir</h3>
+        
+        <div class="pr-activities-grid">
+          <div class="pr-activity-card glass-card">
+            <div class="pr-activity-icon">
+              <svg viewBox="0 0 24 24" style="width:28px; height:28px; fill:var(--brand-accent);"><path d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z"/></svg>
+            </div>
+            <h4>Social Media Strategy</h4>
+            <p>Managing the complete content calendar across LinkedIn and Instagram. Every post is designed to drive engagement, build the Wazir brand, and showcase student achievements.</p>
+          </div>
+          
+          <div class="pr-activity-card glass-card">
+            <div class="pr-activity-icon">
+              <svg viewBox="0 0 24 24" style="width:28px; height:28px; fill:var(--brand-accent);"><path d="M20.71,4.63L19.37,3.29C19,2.9 18.35,2.9 17.96,3.29L9,12.25L11.75,15L20.71,6.04C21.1,5.65 21.1,5 20.71,4.63M7,14A3,3 0 0,0 4,17C4,18.31 2.84,19 2,19C2.92,20.22 4.5,21 6,21A4,4 0 0,0 10,17A3,3 0 0,0 7,14Z"/></svg>
+            </div>
+            <h4>Brand Identity &amp; Design</h4>
+            <p>From event posters to casebook covers, from digital templates to merchandise — crafting a cohesive visual language that makes Wazir instantly recognizable.</p>
+          </div>
+          
+          <div class="pr-activity-card glass-card">
+            <div class="pr-activity-icon">
+              <svg viewBox="0 0 24 24" style="width:28px; height:28px; fill:var(--brand-accent);"><path d="M19,5V19H5V5H19M19,3H5A2,2 0 0,0 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5A2,2 0 0,0 19,3M14.5,11C13.67,11 13,10.33 13,9.5C13,8.67 13.67,8 14.5,8C15.33,8 16,8.67 16,9.5C16,10.33 15.33,11 14.5,11M18,15.5L16,12.5L14,15L11.5,11.5L8,16.5H18V15.5Z"/></svg>
+            </div>
+            <h4>Content &amp; Storytelling</h4>
+            <p>Long-form thought leadership, behind-the-scenes reels, member spotlights, and event narratives that humanize the club and drive authentic engagement.</p>
+          </div>
+          
+          <div class="pr-activity-card glass-card">
+            <div class="pr-activity-icon">
+              <svg viewBox="0 0 24 24" style="width:28px; height:28px; fill:var(--brand-accent);"><path d="M16,13C15.71,13 15.38,13 15.03,13.05C16.19,13.89 17,15 17,16.5V19H23V16.5C23,14.17 18.33,13 16,13M8,13C5.67,13 1,14.17 1,16.5V19H15V16.5C15,14.17 10.33,13 8,13M8,11A3,3 0 0,0 11,8A3,3 0 0,0 8,5A3,3 0 0,0 5,8A3,3 0 0,0 8,11M16,11A3,3 0 0,0 19,8A3,3 0 0,0 16,5A3,3 0 0,0 13,8A3,3 0 0,0 16,11Z"/></svg>
+            </div>
+            <h4>Media &amp; Outreach</h4>
+            <p>Press coverage coordination, alumni spotlights, cross-club collaborations, and inter-IIM visibility campaigns to amplify Wazir's presence nationally.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Topological wave graphical divider -->
+    <svg class="topowave-divider" viewBox="0 0 1440 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 35C150 15 300 55 450 35C600 15 750 55 900 35C1050 15 1200 55 1350 35C1400 30 1420 32 1440 35V70H0V35Z" fill="var(--bg-secondary)"/>
+      <path d="M0 45C150 25 300 65 450 45C600 25 750 65 900 45C1050 25 1200 65 1350 45C1400 40 1420 42 1440 45" stroke="var(--brand-accent)" stroke-width="1" opacity="0.3"/>
+    </svg>
+
+    <!-- ==========================================================================
+         TEAM &amp; LEADERSHIP SECTION
+         ========================================================================== -->
+    <section class="team" id="team" style="background-color: var(--bg-secondary);">
+      <div class="container">
+        <h2 class="section-title text-gradient">The Vuhzeers</h2>
+        <p class="section-subtitle">The original Chaos steering the vision of Wazir.</p>
+        
+        <div class="team-grid">
+          <!-- Convenor -->
+          <div class="team-card">
+            <div class="team-avatar-container">
+              <div class="team-avatar">
+                <svg viewBox="0 0 24 24"><path d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z"/></svg>
+              </div>
+            </div>
+            <h3>Aditya Sarda</h3>
+            <div class="team-role">Convenor</div>
+            <div class="team-vertical">Executive Committee</div>
+            <div class="team-socials">
+              <a href="https://www.linkedin.com/in/strategy-n-consulting/" class="team-social-link" target="_blank">in</a>
+            </div>
+          </div>
+          
+          <!-- Co-Convenor -->
+          <div class="team-card">
+            <div class="team-avatar-container">
+              <div class="team-avatar">
+                <svg viewBox="0 0 24 24"><path d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z"/></svg>
+              </div>
+            </div>
+            <h3>Mridul Upadhyay</h3>
+            <div class="team-role">Co-Convenor</div>
+            <div class="team-vertical">Executive Committee</div>
+            <div class="team-socials">
+              <a href="https://www.linkedin.com/in/strategy-n-consulting/" class="team-social-link" target="_blank">in</a>
+            </div>
+          </div>
+          
+          <!-- APEX Head -->
+          <div class="team-card">
+            <div class="team-avatar-container">
+              <div class="team-avatar">
+                <svg viewBox="0 0 24 24"><path d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z"/></svg>
+              </div>
+            </div>
+            <h3>Prithivi Tejeshwar</h3>
+            <div class="team-role">APEX Head</div>
+            <div class="team-vertical">Consulting Clinic (APEX)</div>
+            <div class="team-socials">
+              <a href="https://www.linkedin.com/in/strategy-n-consulting/" class="team-social-link" target="_blank">in</a>
+            </div>
+          </div>
+          
+          <!-- ER Head -->
+          <div class="team-card">
+            <div class="team-avatar-container">
+              <div class="team-avatar">
+                <svg viewBox="0 0 24 24"><path d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z"/></svg>
+              </div>
+            </div>
+            <h3>Divyanshi Dongre</h3>
+            <div class="team-role">ER Head</div>
+            <div class="team-vertical">External Relations</div>
+            <div class="team-socials">
+              <a href="https://www.linkedin.com/in/strategy-n-consulting/" class="team-social-link" target="_blank">in</a>
+            </div>
+          </div>
+          
+          <!-- Editorials Head -->
+          <div class="team-card" style="margin-top: 2rem;">
+            <div class="team-avatar-container">
+              <div class="team-avatar">
+                <svg viewBox="0 0 24 24"><path d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z"/></svg>
+              </div>
+            </div>
+            <h3>Hidayrajsinh Chauhan</h3>
+            <div class="team-role">Editorials Head</div>
+            <div class="team-vertical">PR & Publications</div>
+            <div class="team-socials">
+              <a href="https://www.linkedin.com/in/strategy-n-consulting/" class="team-social-link" target="_blank">in</a>
+            </div>
+          </div>
+          
+          <!-- Casebook Head -->
+          <div class="team-card" style="margin-top: 2rem;">
+            <div class="team-avatar-container">
+              <div class="team-avatar">
+                <svg viewBox="0 0 24 24"><path d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z"/></svg>
+              </div>
+            </div>
+            <h3>Tanishtha Verma</h3>
+            <div class="team-role">Casebook Head</div>
+            <div class="team-vertical">PR & Publications</div>
+            <div class="team-socials">
+              <a href="https://www.linkedin.com/in/strategy-n-consulting/" class="team-social-link" target="_blank">in</a>
+            </div>
+          </div>
+          
+          <!-- Events Head -->
+          <div class="team-card" style="margin-top: 2rem;">
+            <div class="team-avatar-container">
+              <div class="team-avatar">
+                <svg viewBox="0 0 24 24"><path d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z"/></svg>
+              </div>
+            </div>
+            <h3>Niket Parikh</h3>
+            <div class="team-role">Events Head</div>
+            <div class="team-vertical">PR & Events Management</div>
+            <div class="team-socials">
+              <a href="https://www.linkedin.com/in/strategy-n-consulting/" class="team-social-link" target="_blank">in</a>
+            </div>
+          </div>
+          
+          <!-- Public Relations Head -->
+          <div class="team-card" style="margin-top: 2rem;">
+            <div class="team-avatar-container">
+              <div class="team-avatar">
+                <svg viewBox="0 0 24 24"><path d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z"/></svg>
+              </div>
+            </div>
+            <h3>Akshita</h3>
+            <div class="team-role">PR Head</div>
+            <div class="team-vertical">Public Relations ("Mother of Verticals")</div>
+            <div class="team-socials">
+              <a href="https://www.linkedin.com/in/strategy-n-consulting/" class="team-social-link" target="_blank">in</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Topological wave graphical divider -->
+    <svg class="topowave-divider" viewBox="0 0 1440 70" fill="none" xmlns="http://www.w3.org/2000/svg" style="transform: rotate(180deg);">
+      <path d="M0 35C150 15 300 55 450 35C600 15 750 55 900 35C1050 15 1200 55 1350 35C1400 30 1420 32 1440 35V70H0V35Z" fill="var(--bg-secondary)"/>
+      <path d="M0 45C150 25 300 65 450 45C600 25 750 65 900 45C1050 25 1200 65 1350 45C1400 40 1420 42 1440 45" stroke="var(--brand-accent)" stroke-width="1" opacity="0.3"/>
+    </svg>
+
+    <!-- ==========================================================================
+         CONTACT & INTAKE SECTION
+         ========================================================================== -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="contact-layout glass-card">
+          <div class="contact-info">
+            <h2 class="contact-title text-gradient">Partner With the Strategists</h2>
+            <p>
+              Looking for data-driven strategic advisory for your business? Or looking to collaborate for knowledge sessions? Reach out to Wazir.
+            </p>
+            
+            <div class="contact-channels">
+              <div class="contact-item">
+                <div class="contact-item-icon">✉</div>
+                <div>
+                  <h4>Primary Email</h4>
+                  <p><a href="mailto:snc@iimrohtak.ac.in">snc@iimrohtak.ac.in</a></p>
+                </div>
+              </div>
+              
+              <div class="contact-item">
+                <div class="contact-item-icon">📍</div>
+                <div>
+                  <h4>Campus Location</h4>
+                  <p>Indian Institute of Management Rohtak,<br>NH-10, Southern Bypass, Sunaria, Rohtak, Haryana-124010</p>
+                </div>
+              </div>
+            </div>
+            
+            <div style="margin-top: 1rem;">
+              <span class="motto-script" style="font-size: 1.8rem;">Dare to think?</span>
+              <p style="font-size: 0.95rem; font-weight: 400; color: var(--text-accent);">Then here is where you belong!</p>
+            </div>
+          </div>
+          
+          <div class="contact-form-container">
+            <form id="clinic-intake-form" onsubmit="handleFormSubmit(event)">
+              <div class="form-grid">
+                <div class="form-group">
+                  <label for="form-name">Contact Person Name</label>
+                  <input type="text" id="form-name" class="form-input" placeholder="e.g. Rahul Gupta" required>
+                </div>
+                <div class="form-group">
+                  <label for="form-email">Email Address</label>
+                  <input type="email" id="form-email" class="form-input" placeholder="e.g. rahul@company.com" required>
+                </div>
+                <div class="form-group">
+                  <label for="form-org">Organization/Company</label>
+                  <input type="text" id="form-org" class="form-input" placeholder="e.g. Gupta Logistics Pvt Ltd" required>
+                </div>
+                <div class="form-group">
+                  <label for="form-reason">Collaboration Area</label>
+                  <select id="form-reason" class="form-select" required>
+                    <option value="" disabled selected>Select Inquiry Type</option>
+                    <option value="clinic">Pro-bono Project (Consulting Clinic)</option>
+                    <option value="knowledge">Knowledge/Guest Session Coordination</option>
+                    <option value="sponsorship">Event Sponsorship (COTY / Chakravyuh)</option>
+                    <option value="other">General Query</option>
+                  </select>
+                </div>
+                <div class="form-group form-group-full">
+                  <label for="form-message">Brief Description of the Business Challenge</label>
+                  <textarea id="form-message" class="form-textarea" placeholder="Explain the context or operations pain point you want the Wazir Student Consultant teams to analyze..." required></textarea>
+                </div>
+              </div>
+              <div class="form-submit-row">
+                <button type="submit" class="btn btn-primary">Submit Brief</button>
+              </div>
+            </form>
+            
+            <!-- Success Overlay -->
+            <div class="form-success-overlay" id="form-success">
+              <div class="success-badge-icon">✓</div>
+              <h3 class="text-gradient">Brief Submitted Successfully</h3>
+              <p>Thank you for reaching out to Wazir. The Consulting Clinic operations lead will review your brief and get in touch within 3 business days.</p>
+              <button class="btn btn-secondary" style="margin-top: 1.5rem;" onclick="resetForm()">Submit Another Brief</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#home" class="footer-logo">
+            <svg class="logo-icon" style="width:24px; height:24px;" viewBox="0 0 100 100">
+              <circle cx="50" cy="50" r="44" stroke="currentColor" stroke-width="3" fill="none"/>
+              <path d="M38 35 L43 45 L50 38 L57 45 L62 35 L62 52 L38 52 Z" fill="#030a16" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M43 52 L45 74 L55 74 L57 52 Z" fill="#030a16" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M35 74 H65 V80 H35 Z" fill="#030a16" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+            WAZIR
+          </a>
+          <p class="footer-description">
+            The Official Strategy & Consulting Club of the Indian Institute of Management Rohtak. Empowering candidates, solving real-world corporate challenges.
+          </p>
+        </div>
+        
+        <div class="footer-links-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#verticals">Strategic Verticals</a></li>
+            <li><a href="#apex">APEX Clinic</a></li>
+            <li><a href="#hub">Interactive Hub</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links-col">
+          <h4>Core Activities</h4>
+          <ul>
+            <li><a href="#apex">Consulting Clinic</a></li>
+            <li><a href="#events">COTY Award</a></li>
+            <li><a href="#hub">Consulting Casebook</a></li>
+            <li><a href="#hub">Case Simulator</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links-col">
+          <h4>External Links</h4>
+          <ul>
+            <li><a href="https://www.linkedin.com/company/wazir-snc-iimrohtak/posts/?feedView=all" target="_blank">LinkedIn Company Page</a></li>
+            <li><a href="https://www.linkedin.com/in/strategy-n-consulting/" target="_blank">LinkedIn Club Profile</a></li>
+            <li><a href="https://www.instagram.com/wazir_iimrohtak/" target="_blank">Instagram (wazir_iimrohtak)</a></li>
+            <li><a href="https://iimrohtak.ac.in" target="_blank">IIM Rohtak Official</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <div class="footer-copyright">
+          © 2026 Wazir SNC IIM Rohtak. All rights reserved.
+        </div>
+        <div class="footer-socials">
+          <a href="https://www.linkedin.com/company/wazir-snc-iimrohtak/posts/?feedView=all" class="footer-social-link" target="_blank" aria-label="LinkedIn">LinkedIn</a>
+          <a href="https://www.instagram.com/wazir_iimrohtak/" class="footer-social-link" target="_blank" aria-label="Instagram">Instagram</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       MODALS (PORTALS FOR INTERACTIVE FRAMEWORKS DETAIL)
+       ========================================================================== -->
+  <div id="framework-modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(3,10,22,0.9); backdrop-filter:blur(15px); z-index:2000; align-items:center; justify-content:center; padding: 2rem; animation: fadeIn 0.3s ease;">
+    <div class="glass-card" style="max-width: 600px; width: 100%; position:relative; padding:3rem; box-shadow:0 25px 60px rgba(0,0,0,0.6);" onclick="event.stopPropagation()">
+      <button onclick="closeFrameworkModal()" style="position:absolute; top:1.5rem; right:1.5rem; background:none; border:none; color:var(--text-muted); font-size:1.5rem; cursor:pointer;">&times;</button>
+      <div id="modal-content-area">
+        <!-- Rendered dynamically via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js?v=2.0"></script>
+</body>
+</html>

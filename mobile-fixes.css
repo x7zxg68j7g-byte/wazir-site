@@ -1,0 +1,25 @@
+/* mobile-fixes.css - Mobile specific UI fixes */
+
+/* Adjust APEX section layout on mobile */
+@media (max-width: 768px) {
+  .apex-headline-row {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+  .apex-clinic-showcase {
+    padding: 4rem 0;
+  }
+}
+
+/* Make Consulting Clinic pillar titles horizontal and readable on mobile */
+@media (max-width: 768px) {
+  .pillar-shaft-title {
+    writing-mode: horizontal-tb;
+    transform: rotate(0deg);
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    text-align: center;
+  }
+}

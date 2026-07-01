@@ -403,7 +403,7 @@
           </div>
           
           <!-- Case 3: The Weekend Door -->
-          <div class="case-study-card glass-card">
+          <div class="case-study-card glass-card mobile-collapsible mobile-hidden">
             <div class="case-study-meta">
               <span class="case-study-tag">Travel & Rental</span>
               <span class="case-study-industry">Hyderabad</span>
@@ -416,6 +416,9 @@
               "Their strategic inputs helped us refine our business model and solve key scaling hurdles. Proactive and highly aligned."
             </p>
           </div>
+        </div>
+        <div class="cases-toggle-row" style="text-align: center; margin-top: 2.5rem; display: none;">
+          <button class="btn btn-secondary" id="toggle-cases-btn" onclick="toggleCases()">Show More Cases</button>
         </div>
       </div>
     </section>
@@ -435,7 +438,7 @@
         <p class="section-subtitle">Develop your structured thinking with our interactive resources.</p>
         
         <div class="hub-tabs">
-          <button class="hub-tab-btn active" onclick="switchHubTab(event, 'tab-casebook')">Casebook 3.0</button>
+          <button class="hub-tab-btn active" onclick="switchHubTab(event, 'tab-casebook')">Casebook 4.0</button>
           <button class="hub-tab-btn" onclick="switchHubTab(event, 'tab-frameworks')">Frameworks Hub</button>
           <button class="hub-tab-btn" onclick="switchHubTab(event, 'tab-simulator')">Solve a Case</button>
         </div>
@@ -446,30 +449,17 @@
             <div class="casebook-mockup">
               <div class="book-container">
                 <div class="book-cover">
-                  <div class="book-tagline">IIM Rohtak</div>
-                  <div>
-                    <div class="book-title">WAZIR</div>
-                    <div class="book-subtitle">Casebook 3.0</div>
-                  </div>
-                  <div class="book-logo">
-                    <svg style="width:18px; height:18px; fill:var(--brand-accent);" viewBox="0 0 100 100">
-                      <circle cx="50" cy="50" r="44" stroke="currentColor" stroke-width="3" fill="none"/>
-                      <path d="M38 35 L43 45 L50 38 L57 45 L62 35 L62 52 L38 52 Z" fill="#ffffff" stroke="currentColor" stroke-width="1"/>
-                      <path d="M43 52 L45 74 L55 74 L57 52 Z" fill="#ffffff" stroke="currentColor" stroke-width="1"/>
-                      <path d="M35 74 H65 V80 H35 Z" fill="#ffffff" stroke="currentColor" stroke-width="1"/>
-                    </svg>
-                    <div class="book-logo-text">Wazir</div>
-                  </div>
+                  <img src="Casebook_Coverpage.png" alt="Wazir Casebook 4.0 Cover" style="width: 100%; height: 100%; object-fit: cover; border-radius: 0 8px 8px 0;">
                 </div>
                 <div class="book-pages"></div>
               </div>
             </div>
             
             <div class="casebook-info">
-              <div class="hero-club-badge" style="background: rgba(0, 229, 255, 0.05); margin-bottom: 1rem;">#THIRDTIME'STHECHARM</div>
+              <div class="hero-club-badge" style="background: rgba(0, 229, 255, 0.05); margin-bottom: 1rem;">#4thewin</div>
               <h3 class="text-gradient">Born from real battles and bold minds</h3>
               <p>
-                The Wazir Casebook is our legacy resource shared with faculty and top business schools. Curated and reviewed by IIM Rohtak alumni in consulting roles (McKinsey, BCG, Bain, Big 4), it prepares candidates not just to answer—but to outthink.
+                The Wazir Casebook 4.0 is our flagship legacy resource shared with faculty and top business schools. Curated and reviewed by IIM Rohtak alumni in consulting roles (McKinsey, BCG, Bain, Big 4), it prepares candidates not just to answer—but to outthink.
               </p>
               
               <div class="casebook-stats">
@@ -584,7 +574,16 @@
         <div class="hub-content-pane" id="tab-simulator">
           <div class="simulator-layout">
             <div class="simulator-box" id="simulator-box">
-              
+              <!-- Case Selector Row -->
+              <div class="case-selector-row" style="margin-bottom: 2.5rem; display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; border-bottom: 1px solid rgba(0, 229, 255, 0.1); padding-bottom: 1.25rem;">
+                <label for="case-select" style="font-family: var(--font-header); font-weight: 600; color: var(--text-primary); font-size: 0.9rem; letter-spacing: 0.05em;">PRACTICE CASE STUDY:</label>
+                <select id="case-select" class="form-select" onchange="changeActiveCase(this.value)" style="width: auto; max-width: 100%; background: var(--bg-secondary); border: 1px solid rgba(0, 229, 255, 0.15); color: var(--text-primary); padding: 0.55rem 2rem 0.55rem 1rem; border-radius: 6px; font-family: var(--font-body); font-size: 0.85rem; cursor: pointer; outline: none; transition: border-color 0.3s ease;">
+                  <option value="ev_charging">Case 1: Guesstimate (EV Charging Stations in Mumbai)</option>
+                  <option value="q_commerce">Case 2: Profitability (Q-Commerce Dark Store)</option>
+                  <option value="ev_battery">Case 3: Market Entry (EV Cell Production)</option>
+                </select>
+              </div>
+
               <!-- Progress Steps -->
               <div class="simulator-steps">
                 <div class="sim-step-indicator active" id="sim-step-1-indicator">
@@ -606,112 +605,14 @@
               </div>
               
               <!-- Challenge Prompt -->
-              <div class="simulator-prompt-box">
-                <h4>Guesstimate Challenge</h4>
-                <p>"Estimate the annual market size of Electric Vehicle (EV) charging stations in Mumbai."</p>
+              <div class="simulator-prompt-box" id="sim-prompt-box">
+                <!-- Injected dynamically -->
               </div>
               
-              <!-- Step 1 Pane: Clarification -->
-              <div class="sim-step-content active" id="sim-step-1">
-                <h3 class="sim-question-title text-gradient">Step 1: Clarifying the Scope</h3>
-                <p style="margin-bottom: 1.5rem; font-size: 0.95rem;">Before jumping into numbers, you must align scope with the interviewer. Which question is critical to scope this guesstimate properly?</p>
-                
-                <div class="sim-choices-grid">
-                  <button class="sim-choice-btn" onclick="selectChoice(this, 1, 'incorrect', 'While interesting, commercial charging station infrastructure is driven by business/public deployment, not specifically charging standards details.')">
-                    <div class="choice-marker">A</div>
-                    <span>Should we consider AC slow chargers vs DC fast chargers?</span>
-                  </button>
-                  <button class="sim-choice-btn" onclick="selectChoice(this, 1, 'correct', 'Excellent! Knowing whether we target private residential chargers, public commercial hubs, or fleet depots is critical for structuring the demand model.')">
-                    <div class="choice-marker">B</div>
-                    <span>Are we estimating public commercial charging stations, or does this include private home chargers?</span>
-                  </button>
-                  <button class="sim-choice-btn" onclick="selectChoice(this, 1, 'incorrect', 'The model of EV cars (Tesla vs local brands) doesn\'t change the core infrastructure math for counting charging stations.')">
-                    <div class="choice-marker">C</div>
-                    <span>Should we limit the estimate to specific brands of EV cars operating in Mumbai?</span>
-                  </button>
-                </div>
-                <div class="sim-feedback-box" id="sim-feedback-1"></div>
-              </div>
-              
-              <!-- Step 2 Pane: Structuring -->
-              <div class="sim-step-content" id="sim-step-2">
-                <h3 class="sim-question-title text-gradient">Step 2: Choosing Your Approach</h3>
-                <p style="margin-bottom: 1.5rem; font-size: 0.95rem;">Now choose the optimal formula tree to model the total number of public charging stations in Mumbai.</p>
-                
-                <div class="sim-choices-grid">
-                  <button class="sim-choice-btn" onclick="selectChoice(this, 2, 'incorrect', 'This does not account for the frequency of usage or utilization factors of individual charging stations, which dictates how many are needed.')">
-                    <div class="choice-marker">A</div>
-                    <span>Total Mumbai Vehicles × EV Penetration Rate × Average cost of electricity.</span>
-                  </button>
-                  <button class="sim-choice-btn" onclick="selectChoice(this, 2, 'correct', 'Correct! Structuring via supply capacity and vehicle charging demand is the standard MECE approach for fleet capacity planning.')">
-                    <div class="choice-marker">B</div>
-                    <span>(Total EVs in Mumbai × Avg Charges needed/week) ÷ (Avg Capacity of a Station charges/week).</span>
-                  </button>
-                  <button class="sim-choice-btn" onclick="selectChoice(this, 2, 'incorrect', 'This focuses strictly on land footprint rather than transport/vehicle demand, which is harder to estimate accurately.')">
-                    <div class="choice-marker">C</div>
-                    <span>Total Mumbai Area ÷ Average grid layout capacity per square kilometer.</span>
-                  </button>
-                </div>
-                <div class="sim-feedback-box" id="sim-feedback-2"></div>
-              </div>
-              
-              <!-- Step 3 Pane: Calculations -->
-              <div class="sim-step-content" id="sim-step-3">
-                <h3 class="sim-question-title text-gradient">Step 3: Quantifying the Drivers</h3>
-                <p style="margin-bottom: 1.5rem; font-size: 0.95rem;">Fill in the structured assumptions below. We've pre-filled some standard base assumptions. Complete the calculation.</p>
-                
-                <div class="sim-calculator-container">
-                  <div class="calc-workspace">
-                    <div class="calc-title">Assumptions & Variables</div>
-                    <div class="calc-inputs-grid">
-                      <div class="calc-input-group">
-                        <label>1. Estimated Total EV Vehicles in Mumbai</label>
-                        <input type="number" id="calc-evs" class="calc-input-field" value="60000" readonly>
-                      </div>
-                      <div class="calc-input-group">
-                        <label>2. Average Charges required per EV per week</label>
-                        <input type="number" id="calc-freq" class="calc-input-field" value="2">
-                      </div>
-                      <div class="calc-input-group">
-                        <label>3. Max weekly charge capacity per Station</label>
-                        <input type="number" id="calc-capacity" class="calc-input-field" value="80">
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <div class="calc-workspace">
-                    <div class="calc-title">Formula Output</div>
-                    <div class="calc-formula-display">
-                      Stations = (EVs × Freq) / Capacity
-                    </div>
-                    <div class="calc-inputs-grid">
-                      <div class="calc-input-group">
-                        <label>Enter your calculated Stations</label>
-                        <input type="number" id="calc-result" class="calc-input-field" placeholder="Calculate & Enter">
-                      </div>
-                      <p style="font-size: 0.8rem;" id="calc-hint-msg">Hint: Multiply EV count by charge frequency, then divide by weekly station capacity.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="sim-feedback-box" id="sim-feedback-3"></div>
-              </div>
-              
-              <!-- Step 4 Pane: Summary / Review -->
-              <div class="sim-step-content" id="sim-step-4">
-                <div class="sim-success-content">
-                  <div class="success-badge-icon">✓</div>
-                  <h3>Guesstimate Cracked!</h3>
-                  <p>You have demonstrated structured consulting logic. Here is your evaluation report:</p>
-                  
-                  <div class="sim-score-summary">
-                    <div class="sim-score-num" id="sim-final-score">100%</div>
-                    <div class="sim-score-lbl">Logical Alignment Score</div>
-                  </div>
-                  
-                  <p style="font-size: 0.95rem; max-width: 550px; margin: 0 auto 2.5rem;">
-                    <strong>Executive Summary:</strong> Mumbai's public charging network requires roughly <strong>1,500 active stations</strong> to support a private EV fleet of 60,000, assuming a utilization rate of ~50% (approx 80 charges per week per station base capacity).
-                  </p>
-                </div>
+              <!-- Dynamic Step Content Pane -->
+              <div id="sim-dynamic-pane">
+                <!-- Injected dynamically -->
+              </div>             </div>
               </div>
               
               <!-- Actions -->
@@ -985,7 +886,7 @@
           </div>
           
           <!-- Editorials Head -->
-          <div class="team-card" style="margin-top: 2rem;">
+          <div class="team-card mobile-collapsible mobile-hidden" style="margin-top: 2rem;">
             <div class="team-avatar-container">
               <div class="team-avatar">
                 <svg viewBox="0 0 24 24"><path d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z"/></svg>
@@ -1000,7 +901,7 @@
           </div>
           
           <!-- Casebook Head -->
-          <div class="team-card" style="margin-top: 2rem;">
+          <div class="team-card mobile-collapsible mobile-hidden" style="margin-top: 2rem;">
             <div class="team-avatar-container">
               <div class="team-avatar">
                 <svg viewBox="0 0 24 24"><path d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z"/></svg>
@@ -1015,7 +916,7 @@
           </div>
           
           <!-- Events Head -->
-          <div class="team-card" style="margin-top: 2rem;">
+          <div class="team-card mobile-collapsible mobile-hidden" style="margin-top: 2rem;">
             <div class="team-avatar-container">
               <div class="team-avatar">
                 <svg viewBox="0 0 24 24"><path d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z"/></svg>
@@ -1030,7 +931,7 @@
           </div>
           
           <!-- Public Relations Head -->
-          <div class="team-card" style="margin-top: 2rem;">
+          <div class="team-card mobile-collapsible mobile-hidden" style="margin-top: 2rem;">
             <div class="team-avatar-container">
               <div class="team-avatar">
                 <svg viewBox="0 0 24 24"><path d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z"/></svg>
@@ -1043,6 +944,9 @@
               <a href="https://www.linkedin.com/in/strategy-n-consulting/" class="team-social-link" target="_blank">in</a>
             </div>
           </div>
+        </div>
+        <div class="team-toggle-row" style="text-align: center; margin-top: 3.5rem; display: none;">
+          <button class="btn btn-secondary" id="toggle-team-btn" onclick="toggleTeam()">Show Full Team</button>
         </div>
       </div>
     </section>
@@ -1094,19 +998,19 @@
               <div class="form-grid">
                 <div class="form-group">
                   <label for="form-name">Contact Person Name</label>
-                  <input type="text" id="form-name" class="form-input" placeholder="e.g. Rahul Gupta" required>
+                  <input type="text" id="form-name" name="name" class="form-input" placeholder="e.g. Rahul Gupta" required>
                 </div>
                 <div class="form-group">
                   <label for="form-email">Email Address</label>
-                  <input type="email" id="form-email" class="form-input" placeholder="e.g. rahul@company.com" required>
+                  <input type="email" id="form-email" name="email" class="form-input" placeholder="e.g. rahul@company.com" required>
                 </div>
                 <div class="form-group">
                   <label for="form-org">Organization/Company</label>
-                  <input type="text" id="form-org" class="form-input" placeholder="e.g. Gupta Logistics Pvt Ltd" required>
+                  <input type="text" id="form-org" name="organization" class="form-input" placeholder="e.g. Gupta Logistics Pvt Ltd" required>
                 </div>
                 <div class="form-group">
                   <label for="form-reason">Collaboration Area</label>
-                  <select id="form-reason" class="form-select" required>
+                  <select id="form-reason" name="inquiry_type" class="form-select" required>
                     <option value="" disabled selected>Select Inquiry Type</option>
                     <option value="clinic">Pro-bono Project (Consulting Clinic)</option>
                     <option value="knowledge">Knowledge/Guest Session Coordination</option>
@@ -1116,7 +1020,7 @@
                 </div>
                 <div class="form-group form-group-full">
                   <label for="form-message">Brief Description of the Business Challenge</label>
-                  <textarea id="form-message" class="form-textarea" placeholder="Explain the context or operations pain point you want the Wazir Student Consultant teams to analyze..." required></textarea>
+                  <textarea id="form-message" name="message" class="form-textarea" placeholder="Explain the context or operations pain point you want the Wazir Student Consultant teams to analyze..." required></textarea>
                 </div>
               </div>
               <div class="form-submit-row">

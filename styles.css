@@ -405,9 +405,7 @@ p {
     z-index: 1002; /* ensure on top */
   }
 
-  .scroll-indicator {
-    display: none; /* hide on mobile */
-  }
+
 
   .apex-headline-row {
     display: flex;
@@ -451,9 +449,7 @@ p {
     padding: 0.5rem 0;
   }
 
-  .scroll-indicator {
-    z-index: 1;
-  }
+
 
 .cases-grid {
     grid-template-columns: 1fr;
@@ -1281,16 +1277,10 @@ p {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--brand-blue) 100%);
-  border: 1px solid rgba(0, 229, 255, 0.2);
-  border-left: 8px solid var(--brand-accent);
   border-radius: 0 8px 8px 0;
   box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.6);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 2.2rem 1.5rem;
   z-index: 10;
+  overflow: hidden;
 }
 
 .book-tagline {
@@ -2503,6 +2493,9 @@ p {
   .container {
     padding: 0 1.25rem;
   }
+  .scroll-indicator {
+    display: none !important;
+  }
   .nav {
     position: absolute;
     top: 100%;
@@ -2638,6 +2631,25 @@ p {
   .pr-activities-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
+  }
+  
+  /* Mobile Collapsible Sections to reduce height */
+  .cases-toggle-row, .team-toggle-row {
+    display: block !important;
+  }
+  .case-study-card.mobile-hidden, .team-card.mobile-hidden {
+    display: none !important;
+  }
+
+  /* Section padding and typography height reductions */
+  section, .pr-showcase, .apex-clinic-showcase, .hub, .events, .team, .contact {
+    padding: 4rem 0 !important;
+  }
+  .section-title {
+    margin-bottom: 0.75rem !important;
+  }
+  .section-subtitle {
+    margin-bottom: 2rem !important;
   }
 }
 
