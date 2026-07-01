@@ -1259,8 +1259,8 @@ p {
 }
 
 .book-container {
-  width: 250px;
-  height: 350px;
+  width: 356px;
+  height: 200px;
   position: relative;
   transform-style: preserve-3d;
   transform: rotateY(-15deg) rotateX(5deg);
@@ -2744,6 +2744,10 @@ p {
   }
   .pr-stat-card {
     padding: 1.5rem 1.25rem;
+  }
+  .book-container {
+    width: 280px !important;
+    height: 175px !important;
   }
 }
 

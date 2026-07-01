@@ -757,34 +757,16 @@ function handleFormSubmit(event) {
   const org = document.getElementById('form-org').value;
   const reason = document.getElementById('form-reason').value;
   const message = document.getElementById('form-message').value;
-
-  // Web3Forms Access Key for snc@iimrohtak.ac.in
-  // Note: Standard dynamic key routing has been configured. Replace this value if you have a custom key.
-  const accessKey = "7a40b9c3-1d00-4f9e-8c31-c4d3fa7166bc"; 
-
-  if (accessKey === "YOUR_WEB3FORMS_ACCESS_KEY" || !accessKey) {
-    // Staging simulation fallback if key is not configured
-    console.warn("Web3Forms access key not set! Simulating submission success.");
-    setTimeout(() => {
-      successOverlay.classList.add('active');
-      submitBtn.disabled = false;
-      submitBtn.innerHTML = originalText;
-    }, 1200);
-    return;
-  }
-
-  fetch("https://api.web3forms.com/submit", {
+  fetch("https://formsubmit.co/ajax/snc@iimrohtak.ac.in", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
       "Accept": "application/json"
     },
     body: JSON.stringify({
-      access_key: accessKey,
       name: name,
       email: email,
       subject: `New Wazir Website Collaboration Brief: ${org}`,
-      from_name: "Wazir Website Contact",
       organization: org,
       inquiry_type: reason,
       message: message
@@ -792,7 +774,7 @@ function handleFormSubmit(event) {
   })
   .then(async (response) => {
     let json = await response.json();
-    if (response.status == 200) {
+    if (response.ok) {
       successOverlay.classList.add('active');
     } else {
       console.log(response);
