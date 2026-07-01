@@ -71,6 +71,13 @@ function switchHubTab(event, tabId) {
   document.getElementById(tabId).classList.add('active');
 }
 
+function switchHubTabDirect(tabId) {
+  const tabBtn = document.querySelector(`.hub-tab-btn[onclick*="${tabId}"]`);
+  if (tabBtn) {
+    switchHubTab({ currentTarget: tabBtn }, tabId);
+  }
+}
+
 // Casebook PDF Download Execution
 function simulateDownload() {
   const btn = event.currentTarget;

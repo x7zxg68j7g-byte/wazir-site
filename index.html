@@ -43,7 +43,7 @@
         <a href="#events" class="nav-link">Events</a>
         <a href="#team" class="nav-link">Team</a>
         <a href="#contact" class="nav-link">Contact</a>
-        <a href="#hub" class="btn btn-primary" style="padding: 0.5rem 1.2rem; font-size: 0.85rem;">Solve Case</a>
+        <a href="#hub" class="btn btn-primary" onclick="switchHubTabDirect('tab-simulator')" style="padding: 0.5rem 1.2rem; font-size: 0.85rem;">Solve Case</a>
       </nav>
       <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
         <span></span>
@@ -76,7 +76,7 @@
               Wazir [Vuh. Zeer] represents the strategist of the highest order. We scale up consulting culture at IIM Rohtak, bridging domain methodologies with live corporate projects.
             </p>
             <div class="hero-actions">
-              <a href="#hub" class="btn btn-primary">Try Case Simulator</a>
+              <a href="#hub" onclick="switchHubTabDirect('tab-simulator')" class="btn btn-primary">Try Case Simulator</a>
               <a href="#contact" class="btn btn-secondary">Partner With Us</a>
             </div>
           </div>
@@ -439,7 +439,6 @@
         
         <div class="hub-tabs">
           <button class="hub-tab-btn active" onclick="switchHubTab(event, 'tab-casebook')">Casebook 4.0</button>
-          <button class="hub-tab-btn" onclick="switchHubTab(event, 'tab-frameworks')">Frameworks Hub</button>
           <button class="hub-tab-btn" onclick="switchHubTab(event, 'tab-simulator')">Solve a Case</button>
         </div>
         
@@ -485,90 +484,7 @@
           </div>
         </div>
         
-        <!-- Tab 2: Frameworks Hub -->
-        <div class="hub-content-pane" id="tab-frameworks">
-          <div class="publications-section">
-            
-            <!-- Category A: Regular Publications -->
-            <div>
-              <div class="publications-category-title">Core Knowledge Series</div>
-              <div class="publications-grid">
-                <!-- Pub 1: Guesstimate Guruwaar -->
-                <div class="pub-card glass-card">
-                  <div class="pub-card-header">
-                    <span class="pub-label">Weekly Editorial</span>
-                    <span class="pub-count">60+ Editions</span>
-                  </div>
-                  <h3>Guesstimate Guruwaar</h3>
-                  <p>Weekly strategic guesstimate challenges designed to foster a calculation and structuring culture. Includes the "Guesstimate Guru" awards.</p>
-                  <a href="#" class="pub-card-action">Read articles ➔</a>
-                </div>
-                
-                <!-- Pub 2: Monthly Muse -->
-                <div class="pub-card glass-card">
-                  <div class="pub-card-header">
-                    <span class="pub-label">Monthly Magazine</span>
-                    <span class="pub-count">25+ MMs</span>
-                  </div>
-                  <h3>The Monthly Muse</h3>
-                  <p>In-depth case transcripts, consulting interviews, and structured breakdowns of actual interviews held at premier firms.</p>
-                  <a href="#" class="pub-card-action">Read publications ➔</a>
-                </div>
-                
-                <!-- Pub 3: Industry Overview -->
-                <div class="pub-card glass-card">
-                  <div class="pub-card-header">
-                    <span class="pub-label font-title">Fortnightly Editorial</span>
-                    <span class="pub-count">20+ IOs</span>
-                  </div>
-                  <h3>Industry Overview</h3>
-                  <p>Comprehensive market reports covering growth trends, regulatory drivers, and economics across core sectors.</p>
-                  <a href="#" class="pub-card-action">Read reports ➔</a>
-                </div>
-              </div>
-            </div>
-            
-            <!-- Category B: Limited Editions -->
-            <div>
-              <div class="publications-category-title">Limited Edition Insights</div>
-              <div class="publications-grid">
-                <!-- Pub 4: Strat Square -->
-                <div class="pub-card glass-card">
-                  <div class="pub-card-header">
-                    <span class="pub-label" style="background: rgba(0, 229, 255, 0.05);">Weekly Fast-read</span>
-                    <span class="pub-count">15+ SSs</span>
-                  </div>
-                  <h3>Strat Square</h3>
-                  <p>Deconstructing corporate strategy models using the "Strategy Diamond" framework in a lightning-fast, 2-minute reading format.</p>
-                  <a href="#" class="pub-card-action">Explore insights ➔</a>
-                </div>
-                
-                <!-- Pub 5: Strategy Insights -->
-                <div class="pub-card glass-card">
-                  <div class="pub-card-header">
-                    <span class="pub-label" style="background: rgba(0, 229, 255, 0.05);">Bi-Monthly</span>
-                    <span class="pub-count">10+ SIs</span>
-                  </div>
-                  <h3>Strategy Insights</h3>
-                  <p>Anatomical review of business decisions that helped enterprises carve strategic niches and outsmart competitors.</p>
-                  <a href="#" class="pub-card-action">Explore insights ➔</a>
-                </div>
-                
-                <!-- Pub 6: Strategy Mutations -->
-                <div class="pub-card glass-card">
-                  <div class="pub-card-header">
-                    <span class="pub-label" style="background: rgba(0, 229, 255, 0.05);">Monthly M&A</span>
-                    <span class="pub-count">10+ SMs</span>
-                  </div>
-                  <h3>Strategy Mutations</h3>
-                  <p>Analyzing mergers and acquisitions (M&A) activities, deal rationales, synergy dynamics, and post-merger integration paths.</p>
-                  <a href="#" class="pub-card-action">Explore insights ➔</a>
-                </div>
-              </div>
-            </div>
-            
-          </div>
-        </div>
+
         
         <!-- Tab 3: Interactive Guesstimate Simulator -->
         <div class="hub-content-pane" id="tab-simulator">
@@ -1078,8 +994,8 @@
           <ul>
             <li><a href="#apex">Consulting Clinic</a></li>
             <li><a href="#events">COTY Award</a></li>
-            <li><a href="#hub">Consulting Casebook</a></li>
-            <li><a href="#hub">Case Simulator</a></li>
+            <li><a href="#hub" onclick="switchHubTabDirect('tab-casebook')">Consulting Casebook</a></li>
+            <li><a href="#hub" onclick="switchHubTabDirect('tab-simulator')">Case Simulator</a></li>
           </ul>
         </div>
         
